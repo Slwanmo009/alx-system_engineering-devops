@@ -1,5 +1,4 @@
 #!/bin/bash
-
 git add .
-git commit -m 'updeat'
-git push
+git commit -m 'updeat' 
+git push 
