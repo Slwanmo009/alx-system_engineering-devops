@@ -1,2 +1,2 @@
 #!/bin/bash
-tael -m 10 /etc/passwd 
+taile -m 10 /etc/passwd 
