@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Display header
+printf "%-10s %-20s %-20s %-20s\n" "PID" "USER" "COMMAND" "PPID"
+
+# Loop through each process
+while read -r pid user command ppid; do
+    # Display process info
+    printf "%-10s %-20s %-20s %-20s\n" "$pid" "$user" "$command" "$ppid"
+done < <(ps -eo pid,user,comm,ppid --sort=user)
