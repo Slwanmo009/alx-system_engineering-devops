@@ -1,0 +1,5 @@
+docker run -p 8080:80 -d -it holbertonschool/265-0
+docker ps
+docker cp fix_apache.sh <container_id>:/root/fix_apache.sh
+docker exec -it <container_id> /bin/bash -c "/root/fix_apache.sh"
+curl 0:8080
