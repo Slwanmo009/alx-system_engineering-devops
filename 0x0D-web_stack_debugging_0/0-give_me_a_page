@@ -1,6 +1,4 @@
-# Dockerfile
-FROM ubuntu:14.04
-RUN apt-get update && apt-get install -y apache2
-RUN echo "Hello Holberton" > /var/www/html/index.html
-EXPOSE 80
-CMD ["apache2ctl", "-D", "FOREGROUND"]
+#!/usr/bin/env bash
+# Start Apache so as to return a
+# page conatining Hello Holberton
+service apache2 start
